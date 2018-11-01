@@ -39,7 +39,7 @@ h1 {
   color: #fff;
 }
 
-a href {
+a {
   background-color: #719e07;
 }
 
@@ -47,11 +47,11 @@ a href {
   background-color: #2694d8;
 }
 
-ol li: first-child {
+ol li:first-child {
   color: #719e47;
 }
 
-ol li: last-child {
+ol li:last-child {
   color: #2aa198;
 }
 
@@ -63,6 +63,6 @@ li > .types:nth-child(even) {
   background-color: #586e75;
 }
 
-:nth-last-of-type(3, 6, 9) {
+:nth-last-of-type(3 6 9) {
   background-color: #d04b16;
 }
