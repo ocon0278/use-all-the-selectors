@@ -1,12 +1,3 @@
-html {
-  box-sizing: border-box;
-  line-height: 1.5;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
 body {
   background-color: #fdf6e3;
 }
@@ -27,19 +18,19 @@ h1 {
   background-color: #eee8d5;
 }
 
-#heading-2 {
+h2 {
   color: #93a1a1;
 }
 
-.dfn > .wrapper {
+.wrapper > .dfn {
   background-color: #b58900;
 }
 
-.dfn + strong {
+.dfn > p + strong {
   color: #fff;
 }
 
-a {
+a:not(.no-highlight) {
   background-color: #719e07;
 }
 
@@ -47,7 +38,7 @@ a {
   background-color: #2694d8;
 }
 
-ol li:first-child {
+ol > li:first-child {
   color: #719e47;
 }
 
@@ -55,14 +46,26 @@ ol li:last-child {
   color: #2aa198;
 }
 
-li > .types:nth-child(odd) {
+.types > li:nth-child(odd) {
   background-color: #657ba3;
 }
 
-li > .types:nth-child(even) {
+.types > li:nth-child(even) {
   background-color: #586e75;
 }
 
-:nth-last-of-type(3 6 9) {
+.types > li:nth-last-of-type(3) {
+  background-color: #d04b16;
+}
+
+.types > li:nth-last-of-type(6) {
+  background-color: #d04b16;
+}
+
+.types > li:nth-last-of-type(9) {
+  background-color: #d04b16;
+}
+
+.types > li:nth-last-of-type(12) {
   background-color: #d04b16;
 }
