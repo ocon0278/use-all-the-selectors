@@ -54,3 +54,15 @@ ol li: first-child {
 ol li: last-child {
   color: #2aa198;
 }
+
+li > .types:nth-child(odd) {
+  background-color: #657ba3;
+}
+
+li > .types:nth-child(even) {
+  background-color: #586e75;
+}
+
+:nth-last-of-type(3, 6, 9) {
+  background-color: #d04b16;
+}
